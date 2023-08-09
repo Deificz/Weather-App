@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deificz/Weather-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deificz/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Deificz/Weather-App#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
