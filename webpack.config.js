@@ -5,6 +5,7 @@ module.exports = {
     index: './src/index.js',
     Model: './src/Model.js',
     View: './src/View.js',
+    Controller: './src/Controller.js',
   },
   output: {
     filename: '[name].bundle.js',
