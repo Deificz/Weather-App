@@ -4,13 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script src="./Model.bundle.js"></script>
-    <script src="./View.bundle.js"></script>
-    <script src="./Controller.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="./index.bundle.js" defer></script>
+    <script src="./Model.bundle.js" defer></script>
+    <script src="./View.bundle.js" defer></script>
+    <script src="./Controller.bundle.js" defer></script>
+    
 </head>
-<body>
+<body> 
+    <section id="header">
+    <div class="left-header">
+        <img alt="" class="logo">
+        <h1>Weather App<span> by Deificz</span></h1>
+    </div>
+    <form id="initial-form" action="">
+        <input type="text" id="initial-input" name="initial-input" placeholder="Check another city ~" pattern="[A-Za-z]+" required autocapitalize="on">
+        <h4></h4>
+    </form>
+    </section>
     
+    <section id="clouds">
+        <i class="fa-solid fa-cloud cloud1"></i>
+    </section>
+   
     
+    <section id="result-display">
+        <div class="top-section">
+            <div class="condition element">
+                <img class="cond-img" alt="">
+                <h1 class="cond-label"></h1>
+            </div>
+            <div class="time-place element">
+                <h2 class="location"></h2>
+                <h3 class="time-date"></h3>
+            </div>
+        </div>
+        <div class="temperature element">
+            <h1><i class="fa-solid fa-temperature-three-quarters"></i> Temperature</h1>
+                <h2 class="celcius"></h2>
+                <h2 class="fahrenheit info"></h2>
+            
+        </div>
+        <div class="humidity element">
+            <h1><i class="fa-solid fa-percent"></i> Humidity Level</h1>
+            <h2 class="humidity-result info"></h2>
+        </div>
+        <div class="wind element">
+            <h1><i class="fa-solid fa-wind"></i> Wind</h1>
+            <h2><i class="fa-regular fa-compass"></i> Direction</h2>
+            <h3 class="wind-direction info"></h3>
+            <h2><i class="fa-solid fa-gauge-high"></i> Gust</h2>
+            <div class="columned info">
+                <h3 class="gust-kph"></h3>
+                <h3 class="gust-mph"></h3>
+            </div>
+            <h2><i class="fa-solid fa-truck-fast"></i> Speed</h2>
+            <div class="columned info">
+                <h3 class="speed-kph"></h3>
+                <h3 class="speed-mph"></h3>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
