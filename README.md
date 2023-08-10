@@ -7,3 +7,5 @@ Tech stack used:
   -  CSS
   -  Vanilla JavaScript
   -  WeatherAPI
+
+**Live preview:** https://deificz.github.io/Weather-App/
